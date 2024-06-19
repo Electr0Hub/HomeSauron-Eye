@@ -9,3 +9,7 @@ This is a modified project of ESP32 default CameraWebServer example, adapted for
 
 
 The version of ESP32 lib in this project is [3.0.1](https://github.com/espressif/arduino-esp32/releases/tag/3.0.1).
+
+
+## Versioning
+It's a semantic versioning like X.Y.Z where X is vendor, Y major and Z minor changes. The vendor change is relatied with an [Aggregator](https://github.com/Electr0Hub/HomeSauron-Aggregator), while major and minor changes are for feature and bugfix changes
