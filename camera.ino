@@ -9,6 +9,8 @@
 // ===========================
 const char *ssid = "YOUR_WIFI_NAME";
 const char *password = "YOUR_WIFI_PASSWORD";
+const char *cameraName = "YOUR_CAMERA_NAME";  // Used to create a hostname. Will be used in HomeSauron-Aggregator to determine the camera
+
 bool tryingToConnectWifi = true;
 void startCameraServer();
 void setupLedFlash(int pin);
@@ -96,6 +98,10 @@ void setup() {
 #if defined(LED_GPIO_NUM)
   setupLedFlash(LED_GPIO_NUM);
 #endif
+
+  std::string hostname = "home-sauron-";
+  hostname += cameraName;
+  WiFi.setHostname(hostname.c_str());
 
   WiFi.begin(ssid, password);
   tryingToConnectWifi = false;
