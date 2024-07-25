@@ -7,9 +7,9 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char *ssid = "YOUR_WIFI_NAME";
-const char *password = "YOUR_WIFI_PASSWORD";
-const char *cameraName = "YOUR_CAMERA_NAME";  // Used to create a hostname. Will be used in HomeSauron-Aggregator to determine the camera
+const char *ssid = "Khachatryan_SkyNet_2.4";
+const char *password = "12345678QWER";
+const char *cameraName = "lift";  // Used to create a hostname. Will be used in HomeSauron-Aggregator to determine the camera
 
 bool tryingToConnectWifi = true;
 void startCameraServer();
